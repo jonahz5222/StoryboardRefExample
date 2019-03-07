@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CDp-3P-ftV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Left-->
+        <scene sceneID="QGC-l1-P91">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Left" id="SRi-cO-WT3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Left" image="leftIcon" id="AJa-NP-mgs"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cEx-fh-jjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="482" y="-672"/>
+        </scene>
+        <!--Middle-->
+        <scene sceneID="Tt3-Fg-WfI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Middle" id="KAf-DO-KI1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Middle" image="middleIcon" id="9nd-g7-JNA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mMF-7K-Yx0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="481" y="-444"/>
+        </scene>
+        <!--Right-->
+        <scene sceneID="82I-xC-DIf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Right" id="c0R-es-fS7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Right" image="rightIcon" id="8J6-4B-Zes"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KGT-Vp-EKD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="481" y="-166"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="1kH-Ia-77I">
+            <objects>
+                <tabBarController id="CDp-3P-ftV" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="0LY-29-kWm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="SRi-cO-WT3" kind="relationship" relationship="viewControllers" id="3yI-11-C9q"/>
+                        <segue destination="KAf-DO-KI1" kind="relationship" relationship="viewControllers" id="Sw4-wm-RCv"/>
+                        <segue destination="c0R-es-fS7" kind="relationship" relationship="viewControllers" id="nr6-LI-mV7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xkS-jt-l6U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-708" y="-260"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="leftIcon" width="48" height="48"/>
+        <image name="middleIcon" width="72" height="72"/>
+        <image name="rightIcon" width="48" height="48"/>
+    </resources>
+</document>
